@@ -14,6 +14,13 @@ Filenames and descriptions:
 7. data          : Folder containing Knowledge Graph. 3 files expected in it : train.txt, valid.txt, test.txt. In all 3 files,                    each line should be a tab/space separated integer triple (eg:234 24 148) representing (headId, relationId,                          TailId).
 8. Other models  : Contains equivalent of NN.py and validate.py for ComplEx and HolE.
 
+To run the experiment:
+
+Currently, only WN11 dataset present in ./data  
+
+
+
+
 
 
 
