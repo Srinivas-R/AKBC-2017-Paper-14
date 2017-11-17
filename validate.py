@@ -4,8 +4,8 @@ import ctypes
 import os
 os.environ["CUDA_VISIBLE_DEVICES"]="2"
 
-num_ents = 14951
-num_rels = 1345
+num_ents = 38194
+num_rels = 11
 n = 100
 
 def read_valid(filename):
