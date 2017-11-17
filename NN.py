@@ -6,9 +6,9 @@ os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 lib = ctypes.cdll.LoadLibrary('./batchGen.so')
 
-num_ents = 14951
-num_rels = 1345
-batch_size = 10000
+num_ents = 38194
+num_rels = 11
+batch_size = 20000
 n = 100
 nepoch = 10000
 learning_rate = 0.001
