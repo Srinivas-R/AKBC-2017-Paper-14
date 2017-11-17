@@ -17,7 +17,7 @@ int *lefHead, *rigHead;
 int *lefTail, *rigTail;
 
 Triple *trainHead,*trainTail,*trainList;
-int relationTotal = 1345, entityTotal = 14951, tripleTotal=483142;
+int relationTotal = 11, entityTotal = 38194, tripleTotal=112581;
 float *left_mean, *right_mean;
 int *freqRel, *freqEnt;
 
