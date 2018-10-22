@@ -48,10 +48,8 @@ with tf.device('/gpu:0'):
 	labels = tf.concat([pos_labels, neg_labels],axis=0)
 
 	input_l = tf.concat([tf.concat([pos_head_e,rel_e,pos_tail_e],axis=1), tf.concat([neg_head_e, rel_e, neg_tail_e],axis=1)] , axis=0) 
-	#input_l = tf.concat([tf.concat([pos_head_e + rel_e, pos_tail_e],axis=1), tf.concat([neg_head_e + rel_e, neg_tail_e],axis=1)] , axis=0)
 
 	Wh1 = tf.get_variable(shape=[3*n,10*n],initializer=tf.contrib.layers.xavier_initializer(dtype=tf.float32, seed=1), name='Wh1') 
-
 	Hl1 = tf.nn.dropout(tf.nn.relu(tf.matmul(input_l, Wh1)), dropout_prob)
 	
 	Wh2 = tf.get_variable(shape=[10*n, 1],initializer=tf.contrib.layers.xavier_initializer(dtype=tf.float32, seed=1), name='Wh2')
