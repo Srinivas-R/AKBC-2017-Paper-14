@@ -2,6 +2,7 @@
 
 Implementations of ER-MLP, HolE and ComplEx models, to reproduce results in "Revisiting Simple Neural Networks for Learning Representations of Knowledge Graphs".
 Paper accepted in 6th Workshop on Automated Knowledge Base Construction at NIPS 2017.
+https://arxiv.org/abs/1711.05401
 
 Filenames and descriptions:
 
